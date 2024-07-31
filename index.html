@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            color: #333;
+        }
+        .color-teal {
+            color: teal;
+        }
+        .color-primary {
+            color: #007bff;
+        }
+        .color-secondary {
+            color: #6c757d;
+        }
+        .icon-lg {
+            font-size: 50px;
+        }
+        .icon-sm {
+            font-size: 25px;
+        }
+        .remove-text-decoration {
+            text-decoration: none;
+        }
+        .remove-bullets {
+            list-style: none;
+        }
+        .carousel-item img {
+            max-height: 100vh;
+        }
+        nav {
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+        }
+        footer {
+            background: #343a40;
+        }
+        .section-title {
+            color: #ff6f61;
+            font-weight: bold;
+        }
+        .unique-feature-icon {
+            font-size: 40px;
+            color: #ff6f61;
+        }
+        .card {
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .btn-primary {
+            background-color: #ff6f61;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #ff3e3e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/Logo.jpg" height="50" alt="Brand Logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#" class="nav-item nav-link active" data-scroll="home">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item" data-scroll="about-us">Company</a>
+                                <a href="#" class="dropdown-item" data-scroll="team">Team</a>
+                            </div>
+                        </div>
+                        <a href="#" class="nav-item nav-link" data-scroll="contact-us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="Carousel 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="Carousel 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="Carousel 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+    <main class="m-5">
+        <section class="container m-4 animate__animated animate__fadeIn" id="about-us">
+            <h6 class="display-5 text-center section-title">About Us</h6>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="container">
+                        <img src="https://dummyimage.com/600x400/000/fff" class="d-block w-100" alt="About Us">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="text-black-50">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quos, eum dolores aspernatur ea consequuntur facilis provident odit nemo accusamus accusantium eius. Dolore dolor animi rerum cupiditate ducimus ipsa iure!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et non temporibus consequatur mollitia quos eius ex quidem cumque veniam, quibusdam eaque. Explicabo, rerum neque temporibus minima necessitatibus dolorem ratione eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam ipsum soluta ratione! Voluptate error eum, corrupti officia magni natus. Dolorem sint, quas quo voluptatibus enim consequuntur saepe obcaecati natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem quaerat reprehenderit recusandae aliquid animi provident cupiditate earum voluptate unde voluptatem nisi fugit excepturi vel dolorum eaque, ab aspernatur impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa aspernatur mollitia cumque expedita, totam id ad ex adipisci laudantium sed laborum modi dolorum fugit, iusto architecto recusandae asperiores sunt?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <h6 class="display-6 text-center section-title">What makes us unique</h6>
+                <div class="col-md-4">
+                    <div class="container text-center">
+                        <span class="bi bi-person unique-feature-icon"></span>
+                        <p>Custom Tailored User Options</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="container text-center">
+                        <span class="bi bi-shield-shaded unique-feature-icon"></span>
+                        <p>Privacy First Approach</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="container text-center">
+                        <span class="bi bi-list unique-feature-icon"></span>
+                        <p>Multiple Variations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container m-4 animate__animated animate__fadeIn" id="team">
+            <h6 class="display-5 text-center section-title">Our Innovative Team</h6>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="card" style="width: 300px;">
+                            <img class="card-img-top" src="https://dummyimage.com/300x300/000/fff&text=Sample+Image">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Team Member 1</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque ratione eaque natus doloribus. Accusamus magnam tempore laboriosam laudantium incidunt error consequatur, quibusdam dolore! Praesentium repudiandae commodi amet aspernatur at.</p>
+                                <i class="bi bi-facebook icon-sm m-2"></i>
+                                <i class="bi bi-instagram icon-sm m-2"></i>
+                                <i class="bi bi-linkedin icon-sm m-2"></i>
+                                <!-- Modal Trigger -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamMember1Modal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="card" style="width: 300px;">
+                            <img class="card-img-top" src="https://dummyimage.com/300x300/000/fff&text=Sample+Image">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Team Member 2</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque ratione eaque natus doloribus. Accusamus magnam tempore laboriosam laudantium incidunt error consequatur, quibusdam dolore! Praesentium repudiandae commodi amet aspernatur at.</p>
+                                <i class="bi bi-facebook icon-sm m-2"></i>
+                                <i class="bi bi-instagram icon-sm m-2"></i>
+                                <i class="bi bi-linkedin icon-sm m-2"></i>
+                                <!-- Modal Trigger -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamMember2Modal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="card" style="width: 300px;">
+                            <img class="card-img-top" src="https://dummyimage.com/300x300/000/fff&text=Sample+Image">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Team Member 3</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque ratione eaque natus doloribus. Accusamus magnam tempore laboriosam laudantium incidunt error consequatur, quibusdam dolore! Praesentium repudiandae commodi amet aspernatur at.</p>
+                                <i class="bi bi-facebook icon-sm m-2"></i>
+                                <i class="bi bi-instagram icon-sm m-2"></i>
+                                <i class="bi bi-linkedin icon-sm m-2"></i>
+                                <!-- Modal Trigger -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamMember3Modal">
+                                    More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container m-4 animate__animated animate__fadeIn" id="contact-us">
+            <h6 class="display-5 text-center section-title">Contact Us</h6>
+            <div class="container">
+                <form class="form row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="first-name" required>
+                        <div class="invalid-feedback">Please provide your first name.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" required>
+                        <div class="invalid-feedback">Please provide your last name.</div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">Please provide a valid email address.</div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                        <div class="invalid-feedback">Please provide a message.</div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container my-5">
+                        <img src="assets/Logo.jpg" height="30px" class="bg-white mb-3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, animi magni quis fugit nihil veritatis libero facilis dolore repellat sapiente sunt provident nostrum eveniet cupiditate vero? Necessitatibus iure minus praesentium.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                    <div class="container my-5">
+                        <p class="fs-5 mb-3">Quick Links</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center my-2">
+                    <p>All rights reserved & copyright 2022, <a href="e-comm" class="text-white text-decoration-none">E-comm</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Templates -->
+    <div class="modal fade" id="teamMember1Modal" tabindex="-1" aria-labelledby="teamMember1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamMember1ModalLabel">Team Member 1 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    More details about Team Member 1.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="teamMember2Modal" tabindex="-1" aria-labelledby="teamMember2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamMember2ModalLabel">Team Member 2 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    More details about Team Member 2.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="teamMember3Modal" tabindex="-1" aria-labelledby="teamMember3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamMember3ModalLabel">Team Member 3 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    More details about Team Member 3.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[data-scroll]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('data-scroll')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form Validation
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms)
+                .forEach((form) => {
+                    form.addEventListener('submit', (event) => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+        })();
+    </script>
+</body>
+</html>
